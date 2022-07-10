@@ -11,31 +11,75 @@
 </head>
 
 <body>
-  <header>
+  <!-- <section class="top-header">
+    <header class="header" id="header">
+        {% include "components/nav.njk" %}
+    </header>
+  </section> -->
+
+  <section class="top-header">
+    <header class="header" id="header">
+      <div class="header-content">
+        <a class="aneta" href="/">Aneta Nejman</a>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#about">about</a></li>
+            <li class="nav-item"><a href="#portfolio">projects</a></li>
+            <li class="nav-item"><a href="#contact">contact</a></li>
+          </ul>
+        </nav>
+        <!-- <button class="nav-toggle">Menu</button> -->
+      </div>
+    </header>
+  </section>
+
+
+  <!-- <header>
     <nav>
       <ul>
-        <li><a href="#">intro</a></li>
-        <li><a href="#about-me">about</a></li>
+        <li><a href="#">home</a></li>
+        <li><a href="#about">about</a></li>
         <li><a href="#projects">projects</a></li>        
         <li><a href="#contact">contact</a></li>
       </ul>
     </nav>
-    <h1>Hi there! I'm Aneta, architect by education, now specializing in UX Research and Design</h1>
-    <p class="tagline">meet me and my works<br>designer & content strategist from Warsaw</p>
-    <span>layout by The Awwwesomes</span>
-  </header>
-  <section class="socialmedia">
+  </header> -->
+
+  <main id="main">
+  <div class="container">
+
+  <!-- Section Hero -->
+  <section id="hero">
+    <div class="hero">
+      <h1>
+        <!-- <span class="span-gradient">Hi there!</span> -->
+        Hi there! I'm Aneta, architect by education, now specializing in UX&nbsp;Research and Design
+      </h1>
+    </div>
+  </section>
+  <!-- Section Hero -->
+
+  <!-- <div>
+    <h1>Hi there!</h1>
+    <p class="tagline">I'm Aneta, architect by education, now specializing in UX Research and Design</p>
+    <span></span>
+  </div> -->
+  <!-- </header> -->
+
+  <!-- <section class="socialmedia">
     <ul>
       <li><a href="https://facebook.com/theawwwesomes/" target="_blank"><img src="img/facebook.svg"/></a></li>
       <li><a href="https://instagram.com/theawwwesomes/" target="_blank"><img src="img/instagram.svg"/></a></li>
       <li><a href="https://twitter.com/the_awwwesomes/" target="_blank"><img src="img/twitter.svg"/></a></li>
     </ul>
-  </section>
-  <div class="container">
-    <section class="row" id="about-me">
+  </section> -->
+
+
+    <!-- Section About -->
+    <section class="row" id="about">
       <div class="col-md-6">
         <h2>about</h2>
-        <p>I'm a kind person, driven by curiosity to understand other people and how things around work. I love to learn, share the skills and experiences. My friends describe me as a sponge for knowledge. Creating effective solutions, that people use willingly is what I'm interested in.
+        <p>I'm a kind person, driven by curiosity to understand other people and how things around work. I love to learn, share the skills and experiences. My friends describe me as a sponge for knowledge. Creating effective solutions, that people use willingly is what I'm interested in.</p>
         <p>I'm open to collaborations, a well as part-time and full-time jobs in the field of UX Research, UX Design and Product Design.</p>
 
         <h2>the skillset</h2>
@@ -44,15 +88,19 @@
           <li>creative strategy</li>
           <li>brainstorming sessions</li>
           <li>planning</li>
-          <li>prototyping</li>
+          <li></li>
         </ul>
 
-        <a href="">read more on linkedin</a>
+        <p>read more on <a href="https://www.linkedin.com/in/aneta-nejman">linkedin</a></p>
+
       </div>
       <div class="col-md-5 offset-md-1 author">
         <img src="img/img-cv.jpg" alt="Author of the page">
       </div>
     </section>
+    <!-- // Section About -->
+
+    <!-- Section Projects -->
     <section class="row" id="projects">
       <div class="col-md-12">
         <h2>projects</h2>
@@ -80,25 +128,9 @@
         <p>Fashion axe austin DIY wolf 3 wolf moon, direct trade YOLO tote bag paleo blog.</p>
       </div>
     </section>
-
-    <section class="row">
-      <div class="col-md-12">
-        <h2 class="decorated">for more updates follow me on <a href="http://instagram.com/theawwwesomes" target="_blank">instagram</a></h2>
-      </div>
-      <div class="col-md-3">
-        <img src="img/instagram1.jpg" alt="Instagram pic" />
-        <a href="http://instagram.com/theawwwesomes" target="_blank">@thisismyinstagram</a>
-      </div>
-      <div class="col-md-3">
-        <img src="img/instagram2.jpg" alt="Instagram pic" />
-      </div>
-      <div class="col-md-3">
-        <img src="img/instagram3.jpg" alt="Instagram pic" />
-      </div>
-      <div class="col-md-3">
-        <img src="img/instagram4.jpg" alt="Instagram pic" />
-      </div>
-    </section>
+    <!-- // Section Projects -->
+    
+    <!-- Section Contact -->
     <section class="row contact" id="contact">
       <div class="col-md-12">
         <h2 class="contact-heading">let's stay in touch</h2>
@@ -106,11 +138,24 @@
           or catch me on social media</p>
       </div>
     </section>
+    <!-- // Section Contact -->
+
   </div>
+</main>
+
   <footer>
-    <p>#codesummer challenge organised by <a href="http://theawwwesomes.org" target="_blank">The Awwwesomes</a><br>
-      <a href="http://unsplash.com" target="_blank">photos are taken from Unsplash</a><br> Warsaw, 2019</p>
+    <div>
+      <div>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aneta-nejman">linkedin<!-- <i class="ion ion-logo-linkedin"></i>--></a></li>
+        </ul>
+      </div>
+      <div>
+        <p>© Aneta Nejman 2022</p>
+      </div>
+    </div>
   </footer>
+
 </body>
 
 </html>
