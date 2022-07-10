@@ -1,0 +1,244 @@
+:root {
+  --space-mono: 'Space Mono', sans-serif;
+  --work-sans: 'Work Sans', sans-serif;
+  --rubik: 'Rubik', sans-serif;
+  
+  --display: 'Space Mono', sans-serif;
+  --body: 'Work Sans', sans-serif;
+  
+  --black: #1a0008;
+  --white: #fefefe;
+  --gray: #e0e0e0;
+  --accent: #870028;
+  --accent2: #40a3c8;
+  --accent3: #FF4907;
+  --background: #fafafa;
+  
+  --line-height: 110%;
+  
+  --h1: 5.6rem;
+  --lh1: calc( var(--h1) * 1.15);
+  
+  --h2: 2.1rem;
+  --lh2: calc( var(--h2) * 1.15);
+  
+  --h3: 1.15rem;
+  --lh3: calc( var(--h3) * 1.15);
+  
+  --p1: 1.10rem;
+  --lh-p1: calc( var(--p1) * 1.15);
+}
+
+body {
+  margin: 0;
+  font-family: var(--body);
+}
+
+h1, h2, h3 {
+  line-height: var(--line-height);
+  margin: 0;
+  font-family: 'Radley', serif;
+  font-family: var(--display);
+  font-weight: normal;
+}
+
+h2 {
+  font-size: var(--h2);
+}
+
+h3 {
+  color: var(--accent);
+  font-size: var(--h3);
+  margin-top: 20px;
+}
+
+.decorated::after {
+  content: url('../img/line.svg');
+  position: absolute;
+}
+
+a {
+  color: var(--accent3);
+  text-decoration: underline;
+  /*funkcja przejścia dla koloru tekstu i koloru tła linków*/
+  transition: color 0.7s ease-in-out, background-color 0.7s ease-in-out;
+}
+
+a:hover {
+  background: var(--accent3);
+  color: var(--white);
+}
+
+p {
+  text-transform: none;
+  font-weight: 200;
+  line-height: 160%;
+}
+
+nav {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  font-size: 12px;
+  color: var(--black);
+  margin: 25px 12.5px 25px 12.5px;
+  display: inline-block;
+}
+
+nav li a {
+  color: #000;
+}
+
+header h1 {
+  font-size: var(--h1);
+  color: var(--white);
+  letter-spacing: 1px;
+}
+
+header .tagline {
+  color: var(--white);
+  text-transform: lowercase;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+header {
+  height: 80vh;
+  background-image: url('../img/banner.jpg');
+  background-size: cover;
+  text-align: center;
+  position: relative;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-attachment: fixed;
+}
+
+header span {
+  color: var(--white);
+  position: absolute;
+  bottom: 40px;
+  font-size: 10px;
+  transform: rotate(-90deg);
+  transform-origin: 0 0;
+  left: 15px;
+  bottom: 15px;
+}
+
+.socialmedia {
+  position: fixed;
+  left: 0;
+  top: 30vh;
+  width: 40px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.author {
+  position: relative;
+}
+
+.author::before {
+  content: url(../img/cross.svg);
+  position: absolute;
+  width: 190px;
+  top: -40px;
+  z-index: -1;
+  left: -100px;
+  /*przypisanie animacji blinking, czas trwania 1.5s, powtarzana w nieskończoność – infinite*/
+  animation: blinking 1.5s infinite;
+  /*nadanie wahadłowego kierunku animacji*/
+  animation-direction: alternate;
+}
+
+ul {
+  padding: 0;
+}
+
+span.highlighted {
+  background: var(--accent3);
+  color: var(--white);
+  padding: 0 5px;
+}
+
+ul.list li {
+  list-style: none;
+  border-bottom: 1px solid #d8d8d8;
+  padding: 10px;
+  font-family: var(--display);
+}
+
+h2 {
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+/*usunięcie podkreślenia dla linków, które są w nagłówku i w nawigacji,
+zwróć uwagę, że są tu dwa selektory: h2 a oraz li a, które są oddzielone
+przecinkiem – taki zapis powoduje, że te same właściwości – w tym wypadku
+text-decoration:none przypisane są do dwóch różnych bytów*/
+
+h2 a, nav li a {
+  text-decoration: none;
+}
+
+.contact {
+  text-align: center;
+  margin: 50px 0 100px 0;
+}
+
+h2.contact-heading {
+  font-size: 100px;
+  position: relative;
+}
+
+h2.contact-heading::before {
+  content: url("../img/line.svg");
+  position: absolute;
+  width: 900px;
+  z-index: -1;
+  left: 100px;
+  bottom: -50px;
+  /*przypisanie animacji growing, czas trwania 1s, powtarzana w nieskończoność – infinite*/
+  animation: growing 1s infinite;
+  animation-direction: alternate;
+}
+
+.contact-paragraph {
+  margin-top: 60px;
+}
+
+footer {
+  background: #F2F2F2;
+  padding: 25px 0;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* animacja */
+@keyframes blinking {
+  100% {
+    opacity: 50%;
+  }
+}
+
+@keyframes growing {
+  100% {
+    /*zwiększenie skali obiektu o 5% – 1 to 100%, a 1.05 to 105%*/
+    transform: scale(1.05);
+  }
+}
