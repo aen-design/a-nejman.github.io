@@ -166,7 +166,7 @@ header span {
   position: sticky;
   z-index: 2;
   top: 0;
-  background-color: var(--accent2);
+  background-color: var(--white);
 }
 
 .header-content {
@@ -175,7 +175,7 @@ header span {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto;
 }
 
@@ -189,11 +189,17 @@ header span {
 
 .nav-item a {
   font-size: var(--p1);
+  font-family: var(--display);
   text-decoration: none;
   color: var(--black);
   transition: .3s;
   will-change: transform text-decoration;
   display: block;
+}
+
+.nav-item a:hover {
+  color: var(--white);
+  background: var(--accent3);
 }
 
 /* stupid active state solution 
@@ -204,7 +210,9 @@ header span {
   color: var(--accent);
 } */
 
-.aneta {
+.logo {
+  font-size: var(--p1);
+  font-family: var(--display);
   text-decoration: none;
   color: var(--black);
   transition: .3s;
@@ -285,6 +293,157 @@ img {
   max-width: 100%;
 }
 
+/* card //////////////////////////////*/
+/*.card {
+  margin-bottom: 2rem;
+}
+
+.card-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+img.card-image {
+  width: 100%;
+  max-height: 15rem;
+  object-fit: cover;
+} */
+
+.card {
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+  .card-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .card-image {
+    width: 100%;
+    max-height: 25rem;
+    object-fit: cover;
+  }
+
+  /* .card-image {
+    width: 50%;
+    display: block;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--accent2);
+    max-height: 15rem;
+    object-fit: cover;
+  } */
+    
+    a.card-image:hover {
+      opacity: 0.9;
+    }
+
+    a.card-image:hover::after {
+      content: "";
+      display: table;
+      width: 100%;
+      padding-bottom: 70%;
+    }
+
+  .card-content {
+    width: 100%;
+    padding: 50px;
+    margin-left: -10%;
+    z-index: 1;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+  }
+
+    .card-tag {
+      font-size: 12px;
+      letter-spacing: 0.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .card-tags {
+      display: flex;
+      list-style: none;
+      gap: 1rem;
+      padding-inline-start: unset;
+      margin: unset;
+    }
+
+    .card-title {
+      margin-bottom: 20px;
+      font-size: 30px;
+      margin-top: unset;
+    }
+      
+      a.card-title {
+        color: var(--accent2);
+        ::hover {
+          color: var(--black);
+        }
+      }
+
+    .card-excerpt {
+      margin-bottom: 20px;
+      font-size: 16px;
+      line-height: 26px;
+    }
+
+    .card-meta {
+      font-size: 12px;
+      line-height: 18px;
+      text-transform: uppercase;
+      color: var(--black);
+    }
+
+    .card-footer {
+      display: flex;
+      align-items: center;
+    }
+
+      .read-more {
+        margin-left: auto;
+        padding-bottom: 5px;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        border-bottom: 1px solid transparent;
+        color: var(--gray);
+        ::hover {
+          color: var(--black);
+          border-color: var(--accent);
+        }
+      }
+
+      @media only screen and (max-width: 986px) {
+        .card-wrapper {
+          flex-direction: column;
+        }
+    
+        .card-image {
+          width: 100%;
+        }
+    
+        .card-content {
+          width: 90%;
+          padding: 20px;
+          margin: -10% 0 0 0;
+        }
+    
+      }
+    
+      @media only screen and (max-width: 760px) {
+        .card-content {
+    
+          .card-title {
+            font-size: 27px;
+          }
+        }
+      }
+
 .author {
   position: relative;
 }
@@ -329,7 +488,7 @@ zwróć uwagę, że są tu dwa selektory: h2 a oraz li a, które są oddzielone
 przecinkiem – taki zapis powoduje, że te same właściwości – w tym wypadku
 text-decoration:none przypisane są do dwóch różnych bytów*/
 
-h2 a, nav li a {
+h2 a, nav li a, h3 a {
   text-decoration: none;
 }
 
