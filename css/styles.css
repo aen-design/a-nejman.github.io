@@ -263,8 +263,10 @@ header span {
 .hero {
   font-size: var(--h1);
   line-height: var(--lh1);
-  height: 30vh;
-  margin: 10rem 0 10rem 0;
+/*   height: 30vh;
+  margin: 10rem 0 10rem 0; */
+  height: 50vh;
+  margin: 8rem 0 0 0;
 }
 
 /* header h1 {
