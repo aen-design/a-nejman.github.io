@@ -65,7 +65,10 @@ html {
 @media (max-width: 370px) {
   .hero {
     font-size: calc(var(--h1) * 0.8) !important;
-    height: auto !important;
+  }
+
+  .span-gradient {
+    font-size: calc(var(--h1) * 3 * 0.8) !important;
   }
 }
 
