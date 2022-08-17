@@ -51,6 +51,17 @@ html {
   }
 }
 
+/* aneta ///////////////////////////////////////////*/
+@media (max-width: 390px) {
+  .logo {
+    font-size: calc(var(--h3) * 0.85) !important;
+  }
+
+  .nav-item a {
+    font-size: calc(var(--h3) * 0.85) !important;
+  }
+}
+
 .container-fluid {
   width: 100%;
   padding-right: 15px;
