@@ -54,11 +54,17 @@ html {
 /* aneta ///////////////////////////////////////////*/
 @media (max-width: 390px) {
   .logo {
-    font-size: calc(var(--h3) * 0.85) !important;
+    font-size: calc(var(--h3) * 0.8) !important;
   }
 
   .nav-item a {
-    font-size: calc(var(--h3) * 0.85) !important;
+    font-size: calc(var(--h3) * 0.8) !important;
+  }
+}
+
+@media (max-width: 370px) {
+  .hero {
+    font-size: calc(var(--h1) * 0.9) !important;
   }
 }
 
