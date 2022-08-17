@@ -64,7 +64,8 @@ html {
 
 @media (max-width: 370px) {
   .hero {
-    font-size: calc(var(--h1) * 0.9) !important;
+    font-size: calc(var(--h1) * 0.8) !important;
+    height: auto !important;
   }
 }
 
