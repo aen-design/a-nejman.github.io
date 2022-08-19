@@ -666,6 +666,32 @@ h2.project {
   margin-bottom: 25px;
 }
 
+.before-after-img {
+  display: flex; 
+  gap: 4%; 
+  flex-direction: row; 
+  flex-wrap: wrap;
+}
+
+.before-after-img-01 {
+  max-width: auto;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 420px) {
+  .before-after-img {
+    display: unset !important;
+    gap: unset !important;
+    flex-direction: unset !important;
+    flex-wrap: unset !important;
+  }
+
+  .before-after-img-01 {
+    max-width: unset !important;
+    margin-top: unset !important;
+  }
+}
+
 /* p.project {
   font-size: var(--p1);
   margin-top: 1.5rem;
