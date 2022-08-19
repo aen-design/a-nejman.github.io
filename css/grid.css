@@ -72,9 +72,7 @@ html {
   }
   
   .card-image-box {
-    width: 34rem;
-    height: 18rem;
-    overflow: hidden;
+    width: 34rem !important;
   }
 }
 
