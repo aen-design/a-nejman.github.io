@@ -70,6 +70,12 @@ html {
   .span-gradient {
     font-size: calc(var(--h1) * 3 * 0.8) !important;
   }
+  
+  .card-image-box {
+    width: 34rem;
+    height: 18rem;
+    overflow: hidden;
+  }
 }
 
 .container-fluid {
