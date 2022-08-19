@@ -60,6 +60,12 @@ html {
   .nav-item a {
     font-size: calc(var(--h3) * 0.8) !important;
   }
+
+  /* .card-image-box {
+    width: 34rem;
+    height: 18rem;
+    overflow: hidden;
+  } */
 }
 
 @media (max-width: 370px) {
@@ -69,10 +75,6 @@ html {
 
   .span-gradient {
     font-size: calc(var(--h1) * 3 * 0.8) !important;
-  }
-  
-  .card-image-box {
-    width: 34rem !important;
   }
 }
 
