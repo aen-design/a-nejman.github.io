@@ -219,7 +219,7 @@ header span {
 .nav-item a {
   font-size: var(--caption);
   font-family: var(--display);
-  text-decoration: none;
+  text-decoration: underline;
   color: var(--black);
   transition: .3s;
   will-change: transform text-decoration;
@@ -588,7 +588,7 @@ przecinkiem – taki zapis powoduje, że te same właściwości – w tym wypadk
 text-decoration:none przypisane są do dwóch różnych bytów*/
 
 h2 a, nav li a, h3 a {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .contact {
