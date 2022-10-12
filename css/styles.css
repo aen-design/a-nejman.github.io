@@ -176,11 +176,12 @@ header span {
 .span-gradient {
   font-size: calc(var(--h1) * 3);
   background-image: linear-gradient(60deg, var(--accent), var(--accent2));
-  background-clip: text;
+  /* background-clip: text;
   -webkit-background-clip: text;
-  color: transparent;
+  color: transparent; */
+  color: var(--background)
   animation: blinking 1.5s infinite;
-  animation-direction: alternate;
+  animation-direction: alternate; 
 }
 
 .span-solid {
