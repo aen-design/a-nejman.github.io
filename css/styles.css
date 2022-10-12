@@ -224,6 +224,10 @@ header span {
   transition: .3s;
   will-change: transform text-decoration;
   display: block;
+  color: var(--accent3);
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  transition: color 0.7s ease-in-out, background-color 0.7s ease-in-out;
 }
 
 .nav-item a:hover {
@@ -589,6 +593,10 @@ text-decoration:none przypisane są do dwóch różnych bytów*/
 
 h2 a, nav li a, h3 a {
   text-decoration: underline;
+  color: var(--accent3);
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  transition: color 0.7s ease-in-out, background-color 0.7s ease-in-out;
 }
 
 .contact {
