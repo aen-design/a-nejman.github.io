@@ -233,7 +233,7 @@ header span {
 .nav-item a:hover {
   color: var(--white);
   background: var(--accent3);
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /* stupid active state solution 
