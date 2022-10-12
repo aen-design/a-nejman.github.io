@@ -183,6 +183,11 @@ header span {
   animation-direction: alternate;
 }
 
+.span-solid {
+  color: var(--background);
+  background: var(--accent3)
+}
+
 /* navbar ///////////////////////////////////////////*/
 .top-header {
   position: sticky;
