@@ -20,8 +20,13 @@
   --gray: #e0e0e0;
   --accent: #870028;
   --accent2: #40a3c8;
-  --accent3: rgb(209, 0, 87);
+  /* --accent3: rgb(209, 0, 87); */
+  --accent2: #F8E0D6;
+  --accent3: #FE641C;
   --background: #fff9e6;
+  --background: #f7f7ed;
+  --background: #F9fafc;
+  --brzoskwinia: #FCC491;
 
   /* CSS HEX */
 --old-rose: #B8787Bff;
@@ -175,7 +180,8 @@ header span {
 
 .span-gradient {
   font-size: calc(var(--h1) * 3);
-  background-image: linear-gradient(60deg, var(--accent), var(--accent2));
+  /* background-image: linear-gradient(60deg, var(--accent), var(--accent2)); */
+  background-image: linear-gradient(60deg, var(--black), var(--accent3));
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -185,8 +191,8 @@ header span {
 }
 
 .span-solid {
-  color: var(--background);
-  background: var(--accent3)
+  /* color: var(--background); */
+  background: var(--accent2)
 }
 
 /* navbar ///////////////////////////////////////////*/
@@ -428,7 +434,7 @@ img {
 
   .card-wrapper {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     overflow: hidden;
   }
 
@@ -445,7 +451,7 @@ img {
   }
 
   .card-image {
-    width: 32rem;
+    /* width: 32rem; */
     height: 18rem;
     display: block;
     background-size: cover;
@@ -466,12 +472,13 @@ img {
 
   .card-content {
     width: 100%;
-    padding: 50px;
+    margin-left: 50px;
+    /* padding: 50px;
     margin-left: -10%;
     z-index: 1;
     border-radius: 3px;
     background: rgba(255, 255, 255, 0.98);
-    box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.15); */
   }
 
     .card-tag {
@@ -534,9 +541,11 @@ img {
         }
     
         .card-content {
-          width: 90%;
+          margin-left: 0px;
+          margin-top: 1rem;
+          /* width: 90%;
           padding: 20px;
-          margin: -10% 0 0 0;
+          margin: -10% 0 0 0; */
         }
     
       }
