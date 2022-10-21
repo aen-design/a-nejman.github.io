@@ -11,21 +11,16 @@
     </head>
 
     <body>
-        <section class="top-header">
-            <header class="header" id="header">
-              <div class="header-content">
-                <a class="logo" href="/">Aneta Nejman</a>
-                <nav class="nav">
-                  <ul class="nav-list">
-                    <li class="nav-item"><a href="/#about">about</a></li>
-                    <li class="nav-item"><a href="/#work">work</a></li>
-                    <li class="nav-item"><a href="#contact">contact</a></li>
-                  </ul>
-                </nav>
-                <!-- <button class="nav-toggle">Menu</button> -->
-              </div>
-            </header>
-        </section>
+      <!--Navigation bar-->
+        <div id="nav-placeholder">
+        </div>
+      
+        <script>
+        $(function(){
+          $("#nav-placeholder").load("components/nav.html");
+        });
+        </script>
+      <!--end of Navigation bar-->
         
         <main id="main">
             <div class="container">
@@ -195,27 +190,16 @@
             </div>
         </main>
 
-        <footer>
-          <!-- Section Contact -->
-          <section class="row contact" id="contact">
-            <div class="col-md-12">
-              <h2 class="contact-heading">Let's stay in&nbsp;touch</h2>
-              <p>Write me on aneta.nejman+ux@gmail.com<br>or catch me on <a href="https://www.linkedin.com/in/aneta-nejman">Linkedin</a></p>
-            </div>
-          </section>
-          <!-- // Section Contact -->
+        <!-- Footer -->
+        <div id="footer-placeholder">
+        </div>
       
-          <div>
-            <!-- <div>
-              <ul>
-                <li><a href="https://www.linkedin.com/in/aneta-nejman">linkedin<i class="ion ion-logo-linkedin"></i></a></li>
-              </ul>
-            </div> -->
-            <div>
-              <p style="font-size: calc(var(--p) * 0.1);">©Aneta Nejman, 2022</p>
-            </div>
-          </div>
-        </footer>
+        <script>
+        $(function(){
+          $("#footer-placeholder").load("components/footer.html");
+        });
+      </script>
+      <!--end of Footer-->
         
     </body>
 </html>
